@@ -1,0 +1,23 @@
+{
+  "name": "laddle",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Laddle: a daily word-ladder game. Change one letter at a time to reach the target word.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "words": "node scripts/build-words.mjs",
+    "daily": "node scripts/build-daily.ts",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5"
+  }
+}
